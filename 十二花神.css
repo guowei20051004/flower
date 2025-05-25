@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+input {
+    outline: none;
+}
+
+.big {
+    background: linear-gradient(to bottom, rgb(195, 94, 86, 0.2), rgb(232, 161, 109, 0.2), rgb(240, 192, 182), rgb(224, 111, 95, .4), rgb(201, 94, 50, .4), rgb(198, 234, 162.5), rgb(183, 215, 240), rgb(255, 170, 77, .4), rgb(254, 200, 112, .4), rgb(255, 179, 177.4), rgba(217, 98, 88, 0.5), rgb(253, 225, 162));
+    font-family: "华文新魏";
+    letter-spacing: 5px;
+}
+
+.box {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.img_1 img {
+    float: right;
+    margin: 150px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 40px rgb(195, 94, 86, 0.5);
+}
+
+h1 {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 170px;
+    left: 40%;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: rgb(83, 25, 21);
+    text-shadow: 5px 5px 5px rgba(163, 116, 69, 0.5);
+}
+
+.left_one {
+    padding: 20px;
+    display: block;
+    width: 700px;
+    position: absolute;
+    top: 30%;
+    left: 150px;
+    font-size: 20px;
+    border: 2px solid rgb(172, 135, 141);
+    border-radius: 40px;
+    line-height: 30px;
+}
+
+.left_tow {
+    padding: 20px;
+    display: block;
+    width: 700px;
+    position: absolute;
+    top: 61%;
+    left: 150px;
+    font-size: 20px;
+    border: 2px solid rgb(172, 135, 141);
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.img_2 img {
+    float: left;
+    margin: 150px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 40px rgb(195, 94, 86, 0.5);
+}
+
+.right_one {
+    padding: 20px;
+    display: block;
+    width: 700px;
+    position: absolute;
+    top: 30%;
+    right: 150px;
+    font-size: 20px;
+    border: 2px solid rgb(172, 135, 141);
+    border-radius: 40px;
+    line-height: 30px;
+}
+
+.right_tow {
+    padding: 20px;
+    display: block;
+    width: 700px;
+    position: absolute;
+    top: 61%;
+    right: 150px;
+    font-size: 20px;
+    border: 2px solid rgb(172, 135, 141);
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+}

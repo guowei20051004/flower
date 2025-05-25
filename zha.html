@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,
+        .san,
+        .si,
+        .wu,
+        .six,
+        .qi,
+        .nine,
+        .ten,
+        .shiyi,
+        .shier,
+        .shisan {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .top {
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            overflow: hidden;
+            background-image: url("img/hua.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+
+        .top h1 {
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            margin-top: 150px;
+            text-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+            animation: move 0.5s linear;
+            animation: move 0.5s linear;
+        }
+
+        .top h2 {
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            margin-top: 40px;
+            animation: move 0.5s linear;
+        }
+
+        .top p {
+            font-size: 20px;
+            color: #fff;
+            margin: 60px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            animation: move 0.5s linear;
+        }
+
+        .san_live video {
+            height: 800px;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            box-shadow: 0px 0px 80px rgba(149, 184, 222, 0.4);
+        }
+
+        .san_one {
+            width: 400px;
+            height: 100px;
+            position: absolute;
+            right: 150px;
+            top: 150px;
+            text-align: center;
+            font-size: 70px;
+            font-family: Freestyle Script;
+            color: rgb(82, 99, 125);
+            animation: move 0.5s linear;
+        }
+
+        .san_tow {
+
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            right: 200px;
+            top: 350px;
+            font-size: 20px;
+            font-family: "华文新魏";
+            color: rgba(13, 83, 140, 0.5);
+            line-height: 50px;
+            letter-spacing: 2px;
+            animation: move 0.5s linear;
+        }
+
+        .wu_one {
+            width: 90%;
+            height: 600px;
+            display: flex;
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            animation: move 0.5s linear;
+        }
+
+        .box {
+            flex: 1;
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 20px;
+            box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+            border-radius: 20px;
+            border: 10px solid #fff;
+            background-color: #fff;
+        }
+
+        .box img {
+            width: 200%;
+            height: 85%;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .box span {
+            display: block;
+            text-align: center;
+            line-height: 100px;
+            font-family: "华文新魏";
+            font-size: 25px;
+            color: rgba(0, 0, 0, 0.5);
+            animation: move 0.5s linear;
+        }
+
+        .box:hover {
+            /* 初始大小 */
+            flex-basis: 40%;
+        }
+
+
+        .box:hover img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translatey(100px);
+            }
+
+            100% {
+                transform: translatey(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="ba.js"></script>
+
+    <!-- 第一个页面 -->
+
+    <div class="top">
+        <h1 class="js">欢迎来到鲜花世界</h1>
+        <h2 class="js">探索花卉的奇妙世界，从拟人化到插花艺术，一切尽在这里。</h2>
+        <p class="js"> In the garden of my dreams, where flowers eternally bloom,<br> You are the brightest rose, <br>a
+            vision of
+            love
+            in full bloom. <br>Your petals soft and fragrant, <br>a symphony of colors bright, In your presence,<br> my
+            heart finds
+            its eternal light.</p>
+    </div>
+
+
+    <!-- 第六个页面 -->
+
+    <div class="wu">
+        <div class="wu_one js">
+            <div class="box"><img src="img/蔷薇.jpg" alt=""><span>蔷薇</span></div>
+            <div class="box"><img src="img/白玫瑰.jpg" alt=""><span>白玫瑰</span></div>
+            <div class="box"> <img src="img/黄刺玫.jpg" alt=""><span>黄刺玫</span></div>
+            <div class="box"><img src="img/夹竹桃.jpg" alt=""><span>夹竹桃</span></div>
+            <div class="box"><img src="img/野蔷薇.jpg" alt=""><span>野蔷薇</span></div>
+            <div class="box"><img src="img/夹竹桃2.jpg" alt=""><span>夹竹桃2</span></div>
+        </div>
+    </div>
+</body>
+
+
+
+
+<!-- 第四个页面 -->
+<div class="san">
+    <div class="san_live">
+        <video src="img/muo.mp4" controls loop autoplay muted></video>
+    </div>
+    <div class="san_one js">Flowers&nbsp; & &nbsp;Love</div>
+    <div class="san_tow js">
+        <p>&nbsp;&nbsp;当季风偷走花期，<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monsoon thieves plunder blossoms,<br>
+            我们仍紧握枯萎的隐喻：<br>
+            &nbsp;&nbsp;yet we clutch withered metaphors—<br>
+            &nbsp;&nbsp;&nbsp;爱是宇宙特赦的永生花。<br>
+            Love: the cosmos' pardoned ever-flower.</p>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,874 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+input {
+    outline: none;
+}
+
+
+
+
+/* 头部 */
+
+
+
+.head {
+    height: 8vh;
+    width: 100%;
+    background-color: rgba(133, 163, 169, 0.5);
+    position: fixed;
+    z-index: 5;
+
+}
+
+.head h1 {
+    width: 500px;
+    position: relative;
+    left: 37%;
+    top: 1.5vh;
+    color: rgb(0, 0, 0);
+    padding-left: 80px;
+
+}
+
+.head .my {
+    width: 100px;
+    float: right;
+    text-decoration: none;
+    font-size: 25px;
+    padding-right: 80px;
+    color: rgb(0, 0, 0);
+}
+
+.navder {
+    height: 8vh;
+    width: 50%;
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.navder,
+.nav,
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    position: relative;
+    left: -400px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.nav input {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+.nav span {
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 10px);
+    width: 30px;
+    height: 4px;
+    border-radius: 15px;
+    background-color: #5c5a5a;
+    pointer-events: none;
+    transition: transfrom .3s ease-in-out, top .3s ease-in-out 0.3s;
+}
+
+.nav span:nth-child(3) {
+    top: calc(50% + 6px);
+}
+
+.nav ul {
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    white-space: nowrap;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.nav ul li a:hover {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.nav input:checked~ul {
+    width: 350px;
+}
+
+.nav input:checked~span:nth-child(2) {
+    top: calc(50% - 2px);
+    transform: rotate(-45deg);
+    background-color: #5b5a5a;
+    transition: top .3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+.nav input:checked~span:nth-child(3) {
+    top: calc(50% - 2px);
+    transform: rotate(45deg);
+    background-color: #595959;
+    transition: top .3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+
+/* 第一个页面 */
+
+
+.top {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("img/hua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+
+.top h1 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+    animation: move 0.5s linear;
+}
+
+.top h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    animation: move 0.6s linear;
+}
+
+.top p {
+    font-size: 20px;
+    color: #fff;
+    margin: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    animation: move 0.8s linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+/* 第二个页面 */
+
+
+
+.one,
+.tow,
+.san,
+.si,
+.wu,
+.six,
+.qi,
+.nine,
+.ten,
+.shiyi,
+.shier,
+.shisan {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.one {
+    background-color: rgb(233, 201, 201, 0.1);
+}
+
+.li {
+    width: 700px;
+    opacity: 0.5;
+    position: absolute;
+    left: 100px;
+}
+
+.live {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    position: absolute;
+    left: 150px;
+    top: 20%;
+}
+
+.live img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+
+}
+
+.live img:active {
+    transform: rotate(360deg);
+    transition: all 6s;
+}
+
+
+.one_wen {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    right: 350px;
+    top: 180px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "华文新魏";
+    color: rgb(184, 97, 91);
+
+
+}
+
+.one_tow {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    right: 200px;
+    top: 400px;
+    border: 2px;
+    border-color: azure;
+    font-size: 20px;
+    font-family: "华文新魏";
+    color: rgb(184, 97, 91);
+    text-indent: 2em;
+
+
+}
+
+.one h1 {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    border: 2px;
+    border-color: azure;
+    font-size: 25px;
+    font-family: "华文新魏";
+    color: rgb(184, 97, 91);
+    text-indent: 2em;
+
+
+}
+
+.one_tow p {
+    padding: 10px;
+    line-height: 40px;
+}
+
+.one_tow span {
+    display: block;
+    width: 800px;
+    height: 400px;
+    font-size: 15px;
+    position: absolute;
+    top: 250px;
+}
+
+
+/* 第三个页面 */
+
+.tow_center img {
+    width: 500px;
+    position: absolute;
+    right: 35%;
+    top: 150px;
+    filter: blur(0);
+}
+
+.tow_one {
+    font-size: 20px;
+    font-family: "幼圆";
+    font-weight: bolder;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 180px;
+    top: 200px;
+    background-color: rgb(240, 248, 255, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0, 0.5);
+    transition: all .5s;
+    line-height: 40px;
+}
+
+.tow_tow {
+    font-size: 20px;
+    font-family: "幼圆";
+    font-weight: bolder;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 500px;
+    bottom: 200px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0, 0.5);
+    transition: all .5s;
+    line-height: 40px;
+}
+
+.tow_tow ul,
+.tow_tow h1 {
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.tow_one p {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.tow_center img:hover {
+    filter: blur(2px);
+}
+
+.tow_one:active {
+    transform: translateX(400px);
+}
+
+.tow_tow:active {
+    transform: translateX(320px);
+}
+
+.tow_wen h1 {
+    position: absolute;
+    right: 180px;
+    top: 100px;
+    color: #231e42;
+    line-height: 80px;
+}
+
+
+/* 第四个页面 */
+
+
+
+.san_live video {
+    height: 800px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    box-shadow: 0px 0px 80px rgba(149, 184, 222, 0.4);
+}
+
+.san_one {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    text-align: center;
+    font-size: 70px;
+    font-family: Freestyle Script;
+    color: rgb(82, 99, 125);
+}
+
+.san_tow {
+
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    right: 200px;
+    top: 350px;
+    font-size: 20px;
+    font-family: "华文新魏";
+    color: rgba(13, 83, 140, 0.5);
+    line-height: 50px;
+    letter-spacing: 2px;
+    animation: move 0.5s linear;
+}
+
+
+/* 第五个页面 */
+
+
+.si {
+
+    width: 100%;
+    height: 900px;
+    position: relative;
+    /* overflow: hidden; */
+    background-image: url("img/hua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+
+}
+
+.si_one {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 300px;
+    left: 35%;
+    color: #fff;
+}
+
+.si .si_one h1 {
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.si_one h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.si_one h3,
+.si_one p {
+    text-align: center;
+    line-height: 30px;
+}
+
+/* 第六个页面 */
+
+
+.wu_one {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+
+.box img {
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box span {
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    font-family: "华文新魏";
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.box:hover {
+    /* 初始大小 */
+    flex-basis: 40%;
+}
+
+
+.box:hover img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 第七个页面 */
+
+
+.six_one {
+    width: 500px;
+    position: absolute;
+    left: 180px;
+    top: 150px;
+    box-shadow: 5px 5px 40px rgba(137, 163, 190, 0.493);
+    filter: blur(0);
+}
+
+.six_one:hover {
+    filter: blur(2px);
+}
+
+.six_one img,
+.six_tow img {
+    width: 100%;
+}
+
+.six_tow {
+    width: 400px;
+    position: absolute;
+    right: 180px;
+    bottom: 100px;
+    box-shadow: 5px 5px 20px rgba(83, 122, 164, 0.733);
+}
+
+.six_wen {
+    width: 600px;
+    position: absolute;
+    right: 400px;
+    top: 200px;
+    font-family: "华文新魏";
+    font-size: 50px;
+    line-height: 100px;
+    color: rgb(69, 93, 114);
+    text-shadow: 5px 5px 5px rgba(149, 184, 222);
+}
+
+
+/* 第八个页面 */
+
+
+.qi_one {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    left: 180px;
+    top: 100px;
+}
+
+.qi_box {
+    flex: 1;
+    transition: 1s;
+    overflow: hidden;
+    background-color: rgb(125, 138, 149);
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgb(139, 138, 138, 0.5);
+    border-radius: 20px;
+}
+
+.qi_box:hover {
+    flex-basis: 40%;
+}
+
+.qi_tow {
+    width: 50%;
+    font-size: 40px;
+    font-family: "Freestyle Script";
+    position: absolute;
+    bottom: 150px;
+    left: 25%;
+    text-align: center;
+}
+
+
+/* 第九页 */
+
+
+.nine_img {
+    width: 600px;
+    margin-left: 180px;
+    margin-top: 100px;
+    float: left;
+    overflow: hidden;
+}
+
+.nine_img img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.nine h1 {
+    margin-left: 180px;
+}
+
+.nine h2 {
+    color: rgb(29, 49, 67);
+    margin-bottom: 20px;
+}
+
+.nine li {
+    line-height: 40px;
+}
+
+.nine ul {
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 180px;
+    float: right;
+
+}
+
+.nine_img img:hover {
+
+    transform: scale(2);
+}
+
+.nine_img:hover {
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.5);
+}
+
+
+
+/* 第十页 */
+
+
+.ten_one {
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-width: 1500px 1500px 0 0;
+    border-style: solid;
+    border-color: transparent rgb(240, 248, 255, 0.5) transparent transparent;
+}
+
+.ten_tow {
+    height: 0;
+    width: 0;
+    border-width: 800px 800px 0 0;
+    border-style: solid;
+    border-color: rgb(240, 248, 255) transparent transparent transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+/* 第十一页 */
+
+.shiyi_one {
+    width: 80%;
+    margin-left: 180px;
+    text-align: center;
+    background-color: rgba(180, 208, 221, 0.1);
+}
+
+.shiyi h1 {
+    padding: 30px;
+}
+
+.shiyi h2 {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.shiyi h3 {
+    padding: 20px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.shiyi ul {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.shiyi li {
+    margin-top: 10px;
+    color: rgb(0, 0, 0, 0.5);
+    list-style: none;
+}
+
+.shiyi img {
+    width: 300px;
+    text-align: center;
+    margin: 50px;
+    filter: blur(0);
+}
+
+.shiyi img:hover {
+    filter: blur(2px);
+}
+
+
+/* 十二页 */
+
+
+.shier {
+    overflow: hidden;
+}
+
+.shier_one {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(30, 57, 82);
+    transform: rotate(45deg);
+    transform-origin: left bottom;
+    position: absolute;
+    top: -400px;
+    left: -200px;
+    border-radius: 50px;
+}
+
+.shier_wen {
+    font-size: 20px;
+    transform: rotate(-45deg);
+    color: #fff;
+    line-height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.shier_wen2 {
+    font-size: 20px;
+    transform: rotate(-45deg);
+    color: #fff;
+    position: absolute;
+    left: 550px;
+    bottom: 200px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.shier img {
+    width: 1300px;
+    height: 1300px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -650px;
+    top: -650px;
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+
+/* 十三页 */
+
+
+
+.shisan_one {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    /* border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-radius: 20px 20px 0 0; */
+    /* background: linear-gradient(to bottom, rgb(214, 185, 185, 0.8), rgb(199, 227, 216, 0.5), rgb(182, 211, 228, 0.5)); */
+}
+
+.shisan_box {
+    flex: 1;
+    transition: .5s;
+    /* border-width: 2px 1px 0 1px;
+    border-style: solid; */
+    border-color: rgb(35, 71, 103);
+    /* border-radius: 20px 20px 0 0; */
+    padding: 25px;
+    /* font-size: 20px; */
+    overflow: hidden;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.shisan_box li {
+    width: 60%;
+    font-size: 20px;
+    margin-top: 32px;
+    margin-left: 20px;
+    list-style: none;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.shisan_box:hover {
+    flex-basis: 50%;
+}
+
+.shisan_one .shisan_box:nth-child(1) {
+    background-color: rgb(199, 221, 240, 0.1);
+
+}
+
+.shisan_one .shisan_box:nth-child(2) {
+    background-color: rgb(221, 46, 26, 0.1);
+}
+
+.shisan_one .shisan_box:nth-child(3) {
+    background-color: rgb(201, 218, 170, 0.3);
+}
+
+.shisan_one .shisan_box:nth-child(4) {
+    background-color: rgb(230, 193, 193, 0.3);
+}
+
+.shisan_one .shisan_box:nth-child(5) {
+    background-color: rgb(196, 212, 178, 0.1);
+    flex-basis: 30%;
+}
+
+.shisan_tow {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(196, 212, 178, 0.1);
+
+}
+
+.shisan_tow img {
+    width: 200px;
+    margin: 10PX;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.shisan_tow img:nth-child(1) {
+    margin-left: 50px;
+}
+
+.shisan_tow h1 {
+    width: 200px;
+    float: right;
+    margin-right: 200px;
+    margin-top: 200px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.shisan_tow img:hover {
+    transform: scale(1.5);
+}
+
+
+/* 结尾 */
+
+
+.jie {
+    width: 100%;
+    height: 60vh;
+}
+
+.move {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
